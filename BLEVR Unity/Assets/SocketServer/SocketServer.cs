@@ -23,7 +23,7 @@ namespace Server
             // returns the name of the host 
             // running the application. 
             IPHostEntry ipHost = Dns.GetHostEntry(Dns.GetHostName());
-            IPAddress ipAddr = ipHost.AddressList[0];
+            IPAddress ipAddr = System.Net.IPAddress.Parse("127.0.0.1");//ipHost.AddressList[0];
             IPEndPoint localEndPoint = new IPEndPoint(ipAddr, 11111);
 
             // Creation TCP/IP Socket using 

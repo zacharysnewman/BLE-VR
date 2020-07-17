@@ -44,8 +44,12 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <ItemGroup>     <Compile Include="Assets\Example\PythonExample.cs" />
-     <Compile Include="Assets\Scripts\PythonTest.cs" />
+  <ItemGroup>     <Compile Include="Assets\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.AssemblyInfo.cs" />
+     <Compile Include="Assets\SocketClient\SocketClient.cs" />
+     <Compile Include="Assets\SocketServer\obj\Debug\netcoreapp3.1\SocketServer.AssemblyInfo.cs" />
+     <Compile Include="Assets\SocketServer\SocketServer.cs" />
+     <None Include="Assets\SocketServer\obj\Debug\netcoreapp3.1\SocketServer.csproj.FileListAbsolute.txt" />
+     <None Include="Assets\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.csproj.FileListAbsolute.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
@@ -256,29 +260,17 @@
  <Reference Include="UnityEditor">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.9f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
  </Reference>
- <Reference Include="IronPython">
- <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/Plugins/IronPython.dll</HintPath>
+ <Reference Include="SocketClient">
+ <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketClient/obj/Debug/netcoreapp3.1/SocketClient.dll</HintPath>
  </Reference>
- <Reference Include="Microsoft.Dynamic">
- <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/Plugins/Microsoft.Dynamic.dll</HintPath>
+ <Reference Include="SocketClient">
+ <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketClient/bin/Debug/netcoreapp3.1/SocketClient.dll</HintPath>
  </Reference>
- <Reference Include="IKVM.Reflection">
- <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/Plugins/IKVM.Reflection.dll</HintPath>
+ <Reference Include="SocketServer">
+ <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/obj/Debug/netcoreapp3.1/SocketServer.dll</HintPath>
  </Reference>
- <Reference Include="Microsoft.Scripting">
- <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/Plugins/Microsoft.Scripting.dll</HintPath>
- </Reference>
- <Reference Include="IronPython.Modules">
- <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/Plugins/IronPython.Modules.dll</HintPath>
- </Reference>
- <Reference Include="IronPython.SQLite">
- <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/Plugins/DLLs/IronPython.SQLite.dll</HintPath>
- </Reference>
- <Reference Include="IronPython.Wpf">
- <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/Plugins/DLLs/IronPython.Wpf.dll</HintPath>
- </Reference>
- <Reference Include="BleakUWPBridge">
- <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/Plugins/Lib/bleak/backends/dotnet/BleakUWPBridge.dll</HintPath>
+ <Reference Include="SocketServer">
+ <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/bin/Debug/netcoreapp3.1/SocketServer.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.9f1/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

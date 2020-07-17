@@ -28,8 +28,9 @@ namespace Client
                 // uses port 11111 on the local  
                 // computer. 
                 IPHostEntry ipHost = Dns.GetHostEntry(Dns.GetHostName());
-                IPAddress ipAddr = ipHost.AddressList[0];
+                IPAddress ipAddr = System.Net.IPAddress.Parse("127.0.0.1");//ipHost.AddressList[0];
                 IPEndPoint localEndPoint = new IPEndPoint(ipAddr, 11111);
+                Console.WriteLine($"IP: {ipAddr}");
 
                 // Creation TCP/IP Socket using  
                 // Socket Class Costructor 
@@ -66,10 +67,10 @@ namespace Client
                           Encoding.ASCII.GetString(messageReceived,
                                                      0, byteRecv));
 
-                    // Close Socket using  
-                    // the method Close() 
-                    sender.Shutdown(SocketShutdown.Both);
-                    sender.Close();
+                    // // Close Socket using  
+                    // // the method Close() 
+                    // sender.Shutdown(SocketShutdown.Both);
+                    // sender.Close();
                 }
 
                 // Manage of Socket's Exceptions 
@@ -88,6 +89,14 @@ namespace Client
                 catch (Exception e)
                 {
                     Console.WriteLine("Unexpected exception : {0}", e.ToString());
+                }
+
+                finally
+                {
+                    // Close Socket using  
+                    // the method Close() 
+                    sender.Shutdown(SocketShutdown.Both);
+                    sender.Close();
                 }
             }
 
