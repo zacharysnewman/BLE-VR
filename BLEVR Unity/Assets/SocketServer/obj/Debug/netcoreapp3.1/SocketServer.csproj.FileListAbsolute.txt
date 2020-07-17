@@ -1,0 +1,12 @@
+/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/obj/Debug/netcoreapp3.1/SocketServer.csprojAssemblyReference.cache
+/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/obj/Debug/netcoreapp3.1/SocketServer.csproj.CoreCompileInputs.cache
+/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/obj/Debug/netcoreapp3.1/SocketServer.AssemblyInfoInputs.cache
+/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/obj/Debug/netcoreapp3.1/SocketServer.AssemblyInfo.cs
+/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/bin/Debug/netcoreapp3.1/SocketServer.deps.json
+/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/bin/Debug/netcoreapp3.1/SocketServer.runtimeconfig.json
+/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/bin/Debug/netcoreapp3.1/SocketServer.runtimeconfig.dev.json
+/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/bin/Debug/netcoreapp3.1/SocketServer.dll
+/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/bin/Debug/netcoreapp3.1/SocketServer.pdb
+/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/obj/Debug/netcoreapp3.1/SocketServer.dll
+/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/obj/Debug/netcoreapp3.1/SocketServer.pdb
+/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/obj/Debug/netcoreapp3.1/SocketServer.genruntimeconfig.cache
