@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\Client.cs" />
      <Compile Include="Assets\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.AssemblyInfo.cs" />
      <Compile Include="Assets\SocketClient\SocketClient.cs" />
+     <Compile Include="Assets\SocketServer\obj\Debug\netcoreapp3.1\SocketServer.AssemblyInfo.cs" />
      <Compile Include="Assets\SocketServer\SocketServer.cs" />
      <None Include="Assets\SocketServer\obj\Debug\netcoreapp3.1\SocketServer.csproj.FileListAbsolute.txt" />
      <None Include="Assets\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.csproj.FileListAbsolute.txt" />
@@ -261,14 +262,20 @@
  <Reference Include="UnityEditor">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.9f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
  </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
+ </Reference>
  <Reference Include="SocketClient">
  <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketClient/obj/Debug/netcoreapp3.1/SocketClient.dll</HintPath>
+ </Reference>
+ <Reference Include="SocketClient">
+ <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketClient/bin/Debug/netcoreapp3.1/SocketClient.dll</HintPath>
  </Reference>
  <Reference Include="SocketServer">
  <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/obj/Debug/netcoreapp3.1/SocketServer.dll</HintPath>
  </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
+ <Reference Include="SocketServer">
+ <HintPath>/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer/bin/Debug/netcoreapp3.1/SocketServer.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.9f1/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
