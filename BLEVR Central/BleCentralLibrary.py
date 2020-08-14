@@ -44,7 +44,7 @@ async def getRawSensorData(client, loop):
     charValues = []
 
     for service in client.services:
-        if service.uuid == "3A7E9484-D7D3-4DEA-B422-7C62274CBED3":
+        if service.uuid.lower() == sensorServiceUuid:
             for char in service.characteristics:
                 if "read" in char.properties:
                     try:

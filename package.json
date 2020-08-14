@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "cs-server": "cd \"/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketServer\" && dotnet build && dotnet run",
+        "cs-client": "cd \"/Users/zacknewman/Projects/BLEVR Project/BLEVR Unity/Assets/SocketClient\" && dotnet build && dotnet run",
+        "py-server": "python3 \"/Users/zacknewman/Projects/BLEVR Project/BLEVR Central/Sockets/SocketServer.py\"",
+        "py-client": "python3 \"/Users/zacknewman/Projects/BLEVR Project/BLEVR Central/Sockets/SocketClient.py\""
+    }
+}

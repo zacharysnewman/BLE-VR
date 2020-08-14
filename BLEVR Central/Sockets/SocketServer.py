@@ -12,9 +12,19 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         conn, addr = s.accept()
         with conn:
             print('Connected by', addr)
+            jsonString = '{ "uuid": "abcd-1234", "angle": { "x": 1.0, "y": 2.0, "z": 3.0 }, "deltaTime": "0.0" }'
+            data = bytes(jsonString, 'utf-8')
+            print(len(data))
             while True:
-                data = conn.recv(1024)
-                if not data:
+                recvd = conn.recv(1024)
+                if not recvd:
                     break
-                print('Sending data back: ' + str(data))
-                conn.sendall(bytes('Test Server echo ', 'utf-8') + data)
+                conn.sendall(data)
+
+                # print('Sending data back: ' + str(data))
+                # conn.sendall(bytes('Test Server echo ', 'utf-8') + data)
+
+                # -- ERROR thrown when client disconnects from server --
+                #  File "/Users/zacknewman/Projects/BLEVR Project/BLEVR Central/Sockets/SocketServer.py", line 19, in <module>
+                # recvd = conn.recv(1024)
+                # ConnectionResetError: [Errno 54] Connection reset by peer
