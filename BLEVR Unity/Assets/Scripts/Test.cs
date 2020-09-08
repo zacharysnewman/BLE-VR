@@ -7,12 +7,13 @@ public class Test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // SocketClient.GetData();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // if(Input.GetKeyDown(Keycode))
+        // if (Input.GetKeyDown(KeyCode.Space))
         SocketClient.GetData();
     }
 
