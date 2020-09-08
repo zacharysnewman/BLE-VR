@@ -1,6 +1,3 @@
-using System.Threading;
-// using System.Diagnostics;
-using System.Threading.Tasks;
 using System;
 using System.Net;
 using System.Net.Sockets;
@@ -9,7 +6,7 @@ using UnityEngine;
 
 public static class SocketClient
 {
-    public static void GetData()
+    public static string GetJsonDataFromLocalServer()
     {
         try
         {
@@ -23,18 +20,21 @@ public static class SocketClient
             sender.Connect(localEndPoint);
             // Debug.Log(string.Format("Socket connected to -> {0} ", sender.RemoteEndPoint.ToString()));
 
-            byte[] messageSent = Encoding.ASCII.GetBytes("Test Client<EOF>");
-            int byteSent = sender.Send(messageSent);
+            byte[] messageToSend = Encoding.ASCII.GetBytes("Test Client<EOF>");
+            int byteSent = sender.Send(messageToSend);
 
             byte[] messageReceived = new byte[1024];
-
             int byteRecv = sender.Receive(messageReceived);
-            Debug.Log(string.Format("Message from Server -> {0}",
-                    Encoding.ASCII.GetString(messageReceived,
-                                                0, byteRecv)));
+
+            var messageJson = Encoding.ASCII.GetString(messageReceived,
+                                                0, byteRecv);
+
+            // Debug.Log(string.Format("Message from Server -> {0}", messageJson));
 
             sender.Shutdown(SocketShutdown.Both);
             sender.Close();
+
+            return messageJson;
         }
 
         // Manage Socket's Exceptions 
@@ -52,5 +52,7 @@ public static class SocketClient
         {
             Debug.Log(string.Format("Unexpected exception : {0}", e.ToString()));
         }
+
+        return null;
     }
 }

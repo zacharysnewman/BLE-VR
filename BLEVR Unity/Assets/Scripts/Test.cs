@@ -4,21 +4,17 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
+    public BleVrSensor sensor;
+
     // Start is called before the first frame update
     void Start()
     {
-        // SocketClient.GetData();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // if (Input.GetKeyDown(KeyCode.Space))
-        SocketClient.GetData();
-    }
-
-    void OnApplicationQuit()
-    {
-        // SocketClient.Stop();
+        var data = SocketClient.GetJsonDataFromLocalServer();
+        Debug.Log(data);
     }
 }
