@@ -149,6 +149,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98f09e62886714e8ebf389b9f4fe6046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sensorData:
+    uuid: 
+    angle: {x: 0, y: 0, z: 0}
+    deltaTime: 0
 --- !u!4 &784848152
 Transform:
   m_ObjectHideFlags: 0
@@ -256,7 +260,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1727906424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98f09e62886714e8ebf389b9f4fe6046, type: 3}
+  m_Script: {fileID: 11500000, guid: d711c3826713246ea847180e0e41f512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1827845248

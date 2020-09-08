@@ -3,6 +3,7 @@
     "cs-server": "cd \"/Users/zacknewman/Projects/BLEVR Project/Sockets/SocketServer\" && dotnet build && dotnet run",
     "cs-client": "cd \"/Users/zacknewman/Projects/BLEVR Project/Sockets/SocketClient\" && dotnet build && dotnet run",
     "py-server": "python3 \"/Users/zacknewman/Projects/BLEVR Project/Sockets/SocketServer.py\"",
-    "py-client": "python3 \"/Users/zacknewman/Projects/BLEVR Project/Sockets/SocketClient.py\""
+    "py-client": "python3 \"/Users/zacknewman/Projects/BLEVR Project/Sockets/SocketClient.py\"",
+    "push": "git add . && git commit && git push"
   }
 }

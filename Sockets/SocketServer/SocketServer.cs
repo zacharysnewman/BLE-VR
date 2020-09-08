@@ -6,10 +6,8 @@ using System.Text;
 
 namespace Server
 {
-
     class Program
     {
-
         // Main Method 
         static void Main(string[] args)
         {
@@ -18,7 +16,6 @@ namespace Server
 
         public static void ExecuteServer()
         {
-
             IPHostEntry ipHost = Dns.GetHostEntry(Dns.GetHostName());
             IPAddress ipAddr = System.Net.IPAddress.Parse("127.0.0.1");//ipHost.AddressList[0];
             IPEndPoint localEndPoint = new IPEndPoint(ipAddr, 11111);
