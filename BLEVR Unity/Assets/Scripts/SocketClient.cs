@@ -9,33 +9,8 @@ using UnityEngine;
 
 public static class SocketClient
 {
-    // private static Socket sender;
-
-    // public static void Stop()
-    // {
-    //     client.Dispose();
-    // }
-
-    // ExecuteClient() Method 
-    // private static void Loop()
-    // {
-    //     while (true)
-    //     {
-    //         byte[] messageSent = Encoding.ASCII.GetBytes("Test Client<EOF>");
-    //         int byteSent = sender.Send(messageSent);
-
-    //         byte[] messageReceived = new byte[1024];
-
-    //         int byteRecv = sender.Receive(messageReceived);
-    //         Debug.Log(string.Format("Message from Server -> {0}",
-    //           Encoding.ASCII.GetString(messageReceived,
-    //                                      0, byteRecv)));
-    //     }
-    // }
-
     public static void GetData()
     {
-        //await System.Threading.Tasks.Task.Run(() => WriteLine("Test"));
         try
         {
             var ipHost = Dns.GetHostEntry(Dns.GetHostName());
@@ -48,8 +23,6 @@ public static class SocketClient
             sender.Connect(localEndPoint);
             // Debug.Log(string.Format("Socket connected to -> {0} ", sender.RemoteEndPoint.ToString()));
 
-            // while (true)
-            // {
             byte[] messageSent = Encoding.ASCII.GetBytes("Test Client<EOF>");
             int byteSent = sender.Send(messageSent);
 
@@ -59,7 +32,6 @@ public static class SocketClient
             Debug.Log(string.Format("Message from Server -> {0}",
                     Encoding.ASCII.GetString(messageReceived,
                                                 0, byteRecv)));
-            // }
 
             sender.Shutdown(SocketShutdown.Both);
             sender.Close();
